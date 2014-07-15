@@ -6,12 +6,27 @@ body {
   font-family: Roboto, 'Helvetica', sans-serif;
   font-weight: 100;
   color: #fff;
+  padding-bottom: 40px;
 }
 
 h1 {
   font-weight: 100;
   color: #fff;
 }
+
+
+h3 + p {
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+pre {
+  padding: 0;
+  border: none;
+  margin-bottom: 40px;
+  margin-top: 20px; }
+
+.html, .bash { font-size: 1.8em; }
 
 header {
   padding: 10px 20px;
@@ -30,14 +45,65 @@ header {
 }
 
 footer {
+  font-size: 1.15em;
+  text-shadow: 0 0 0 #fff;
+
   a {
-   color: #fff;
-   
-   &:hover  {
-     color: #fff;
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
   }
-  
+
   span {
-    font-weight: 400;
+    @extend .pulse-shrink;
   }
+}
+
+.download-btn {
+  @include flatButton($asphalt, $midnight, 48px);
+  font-size: 1.5em;
+  margin-top: 22px;
+
+  span.octicon {
+    font-size: 1.1em;
+    margin-right: 5px;
+  }
+}
+
+.monospace {
+  font-family: monospace, arial, sans-serif;
+}
+
+@-webkit-keyframes pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.pulse-shrink {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.pulse-shrink {
+  -webkit-animation-name: pulse-shrink;
+  animation-name: pulse-shrink;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }

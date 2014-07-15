@@ -9,6 +9,7 @@
     <link rel="import" href="smart-watch.html"/>
     
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css"/>
     <link rel="stylesheet" href="demo/vendor/styles/monokai.css"/>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="demo/styles/moto-360.css"/>
@@ -39,12 +40,31 @@
             <smart-watch img="demo/img/demo-2.png"></smart-watch>
         </div>
     </div>
-    <h1 class="text-center">This watch was built with the most premium of materials: CSS</h1>
+    <h1 class="text-center">This watch was built with the most premium materials: Polymer & CSS</h1>
     <pre><code class="html">&lt;!-- Basic Smartwatch --&gt;
 &lt;smart-watch&gt;&lt;/smart-watch&gt;
 
 &lt;!-- Display an Image --&gt;
 &lt;smart-watch img="lol-cat.png"&gt;&lt;/smart-watch&gt;</code></pre>
+
+    <div class="row">
+        <div class="col-sm-7 col-md-8 col-lg-9">
+            <h3>Install with bower</h3>
+            <pre><code class="bash">$ bower install smart-watch</code></pre>
+        </div>
+        <div class="col-sm-5 col-md-4 col-lg-3">
+            <h3>Or Download the Code</h3>
+            <button class="download-btn" onclick="window.location = 'https://github.com/Androguide/smart-watch/releases/'"><span class="octicon octicon-mark-github"></span> <span>Download on GitHub</span></button>
+        </div>
+    </div>
+
+    <h3>Changing size</h3>
+    <p>You can very easily change the watch size just by changing the <span class="monospace">font-size</span> property of the element</p>
+    <pre><code class="html">&lt;!-- Big Watch --&gt;
+&lt;smart-watch style="font-size: 30px"&gt;&lt;/smart-watch&gt;
+
+&lt;!-- Small Watch --&gt;
+&lt;smart-watch style="font-size: 5px"&gt;&lt;/smart-watch&gt;</code></pre>
 </div>
 
 <footer class="navbar-fixed-bottom">
