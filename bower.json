@@ -1,0 +1,19 @@
+{
+  "name": "smart-watch",
+  "version": "0.0.0",
+  "authors": [
+    "Louis Teboul (Androguide) <admin@androguide.fr>"
+  ],
+  "description": "Element providing a Smartwatch built with CSS",
+  "keywords": "smartwatch, watch, css, polymer, web-components",
+  "main": "smart-watch.html",
+  "license": "MIT",
+  "homepage": "https://github.com/Androguide/smart-watch/",
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.3",
+    "polymer-test-tools": "Polymer/polymer-test-tools#~0.3.3"
+  }
+}

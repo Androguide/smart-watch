@@ -1,0 +1,38 @@
+@mixin flatButton($color, $border-color, $height) {
+  position: relative;
+  display: block;
+  vertical-align: top;
+  max-width: 400px;
+  width: 100%;
+  height: $height;
+  padding: 2px 0 0 0;
+  font-size: 1.3em;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: $color;
+  border: 0;
+  border-bottom: 3px solid $border-color;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px $border-color;
+  box-shadow: inset 0 -2px $border-color;
+  margin-bottom: 10px;
+
+  &:hover, &:active, &:focus {
+    @media screen and (min-width: 768px) {
+      outline: none !important;
+      color: #fff;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    outline: none !important;
+  }
+
+  &:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!-- SmartWatch 
+An element providing a dummy smartwatch built with CSS, with the ability to display images.
+
+##### Examples
+
+    <smart-watch></smart-watch>
+    
+    <smart-watch img="image.png"></smart-watch>
+
+@element smart-watch
+@blurb Element providing a dummy smartwatch built with CSS
+@status alpha
+@homepage http://androguide.github.io/Smartwatch
+-->
+
+<polymer-element name="smart-watch" attributes="img" noscript>
+
+    <template>
+        <link rel="stylesheet" href="smart-watch.css">
+        
+        <div class="watch">
+            <div class="top_band"></div>
+            <div class="watch_face">
+                <div class="watch_display"></div>
+                <img class="screen_image" src="{{img}}">
+                <div class="watch_button"></div>
+            </div>
+            <div class="bottom_band"></div>
+        </div>
+    </template>
+    
+</polymer-element>

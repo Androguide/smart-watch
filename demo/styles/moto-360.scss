@@ -1,0 +1,43 @@
+@import "variables";
+@import "mixins";
+
+body {
+  background: $teal;
+  font-family: Roboto, 'Helvetica', sans-serif;
+  font-weight: 100;
+  color: #fff;
+}
+
+h1 {
+  font-weight: 100;
+  color: #fff;
+}
+
+header {
+  padding: 10px 20px;
+  background: $teal_darker;
+  margin-bottom: 30px;
+
+  h2 {
+    margin: 0;
+    display: inline-block;
+    font-weight: 100;
+  }
+
+  .col-xs-11 {
+    padding-left: 0;
+  }
+}
+
+footer {
+  a {
+   color: #fff;
+   
+   &:hover  {
+     color: #fff;
+  }
+  
+  span {
+    font-weight: 400;
+  }
+}

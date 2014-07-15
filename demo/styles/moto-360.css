@@ -1,0 +1,78 @@
+body {
+  background: #00bad2;
+  font-family: Roboto, 'Helvetica', sans-serif;
+  font-weight: 100;
+  color: #fff; }
+
+h1 {
+  font-weight: 100;
+  color: #fff;
+  margin-bottom: 50px; }
+  
+pre { 
+  padding: 0;
+  border: none; }
+
+header {
+  padding: 10px 20px;
+  background: #0092aa;
+  margin-bottom: 30px; }
+  header h2 {
+    margin: 0;
+    display: inline-block;
+    font-weight: 100; }
+  header .col-xs-11, header .col-xs-1 {
+    padding-left: 0; }
+    
+footer { text-shadow: 0 0 0 #fff; }
+
+footer a, a:hover { color: #fff; }
+
+footer span { font-weight: 300; }
+
+/* Pulse Grow */
+@-webkit-keyframes pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@-webkit-keyframes pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.pulse-shrink {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-animation-name: pulse-shrink;
+  animation-name: pulse-shrink;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
