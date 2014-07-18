@@ -1,9 +1,9 @@
-#watch {
+.watch {
   width: 16.7em;
   display: inline-block;
 }
 
-#watch_face {
+.watch_face {
     height: 15em;
     width: 15em;
     border-radius: 50%;
@@ -14,7 +14,7 @@
     box-shadow: 0 0 6px #555;
 }
 
-#watch_display {
+.watch_display {
     position: relative;
     z-index: 99;
     border-radius: 50%;
@@ -26,7 +26,7 @@
     transform: rotate(30deg);
 }
 
-#watch_button {
+.watch_button {
     position: relative;
     left: 15.46em;
     height: 15px;
@@ -35,13 +35,10 @@
     background: #787878;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    border-top: 1px dotted #999;
-    border-bottom: 1px dotted #999;
-    border-right: 1px dotted #999;
     cursor: pointer;
 }
 
-#top_band, #bottom_band {
+.top_band, .bottom_band {
     width: 7.5em;
     background: #222;
     position: relative;
@@ -54,16 +51,16 @@
     box-shadow: 0 0 12px #555;
 }
 
-#top_band {
+.top_band {
     bottom: -1.75em;
 }
 
-#bottom_band {
+.bottom_band {
     top: -1.75em;
     height: 8.5em;
 }
 
-#screen_image {
+.screen_image {
     position: relative;
     display: block;
     width: 100%;

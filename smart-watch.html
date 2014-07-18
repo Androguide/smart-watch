@@ -15,20 +15,35 @@ An element providing a dummy smartwatch built with CSS, with the ability to disp
 @homepage http://androguide.github.io/Smartwatch
 -->
 
-<polymer-element name="smart-watch" attributes="img" noscript>
+<polymer-element name="smart-watch" attributes="img">
 
     <template>
         <link rel="stylesheet" href="smart-watch.css">
         
-        <div class="watch">
-            <div class="top_band"></div>
-            <div class="watch_face">
-                <div class="watch_display"></div>
-                <img class="screen_image" src="{{img}}">
-                <div class="watch_button"></div>
+        <div id="watch">
+            <div id="top_band"></div>
+            <div id="watch_face">
+                <div id="watch_display"></div>
+                <img id="screen_image" src="{{img}}">
+                <div id="watch_button" on-click="{{toggleDisplay}}"></div>
             </div>
-            <div class="bottom_band"></div>
+            <div id="bottom_band"></div>
         </div>
     </template>
+
+    <script>
+        Polymer('smart-watch', {
+            img: '',
+            picture: '',
+            ready: function() {
+                console.log(this.img);
+                this.picture = this.img;
+            },
+            toggleDisplay: function() {
+                if (this.img === "") this.img = this.picture;
+                else this.img = "";
+            }
+        })
+    </script>
     
 </polymer-element>
